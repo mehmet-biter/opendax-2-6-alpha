@@ -78,7 +78,7 @@ services:
 
   sidekiq:
     restart: always
-    image: "quay.io/openware/barong:2.6.0-48b0578"
+    image: "<%= @config['images']['barong'] %>"
     env_file:
       - ../config/barong.env
     volumes:
